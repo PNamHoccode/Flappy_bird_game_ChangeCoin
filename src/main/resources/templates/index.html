@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird</title>
+    <link rel="icon" href="/image/flappybird.png" />
+    <link rel="stylesheet" href="flappybird.css" />
+    <script src="flappybird.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <nav> 
+         <img src="/image/logo-m200x52.webp" alt="Logo" class="logo" />
+        <div class="menu-left">
+        
+          <a href="/exchange.html">Đổi điểm</a>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#">Tài Khoản</a>
+            <ul class="dropdown-menu" id="menu">
+              <li><a class="dropdown-items">Đăng Ký</a></li>
+              <li><a class="dropdown-items">Đăng Nhập</a></li>
+              <li><a class="dropdown-items">Thông tin tài khoản</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </div>
+
+    <!-- Canvas -->
+    <div style="margin-top: 60px;">
+      <div class="game-container">
+          <canvas id="board"></canvas>
+      </div>
+  </div>
+  
+    
+    
+
+    <!-- Game Over -->
+    <div id="game-over" style="display: none">
+      <h1>Game Over</h1>
+      <br />
+      <p>Score: <span id="score"></span></p>
+      <br />
+      <p>Best Score: <span id="best-score"></span></p>
+      <p id="medal">Medal: <img id="medal-image" alt="Medal Image" /></p>
+      <button onclick="restartGame()">Restart</button>
+    </div>
+  </body>
+</html>
